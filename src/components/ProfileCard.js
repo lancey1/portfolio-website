@@ -16,6 +16,10 @@ function ProfileCard(props) {
     bottomRef.current?.scrollIntoView({behavior: 'smooth'});
   }, [displaySkills,displayEmployment,displayEducation]);
 
+	useEffect(() => {
+    bottomRef.current?.scrollIntoView({behavior: 'smooth'});
+  }, [displaySkills,displayEmployment,displayEducation]);
+
 	const clickSkillsHandler = () => {
 		setDisplaySkills(prev => !prev)
 		setDisplayEducation(false)
@@ -56,6 +60,7 @@ function ProfileCard(props) {
         <p>{user.basics.summary}</p>
       </div>
       <div className={`${styles.resume}`}>
+			<div ref={bottomRef} />
 			<ul>
 				<li onClick={clickSkillsHandler}>Skills</li>
 	
@@ -70,7 +75,6 @@ function ProfileCard(props) {
 				{displayEducation && <Education education = {user.education}/>}
 
 			</ul>
-			<div ref={bottomRef} />
 			</div>
     </div>
   );
