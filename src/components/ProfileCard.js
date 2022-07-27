@@ -13,7 +13,6 @@ function ProfileCard(props) {
 	const bottomRef = useRef(null);
 
 	useEffect(() => {
-    // 👇️ scroll to bottom every time messages change
     bottomRef.current?.scrollIntoView({behavior: 'smooth'});
   }, [displaySkills,displayEmployment,displayEducation]);
 
