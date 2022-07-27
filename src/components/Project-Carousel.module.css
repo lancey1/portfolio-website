@@ -1,0 +1,52 @@
+.container {
+  margin-left: 10%;
+  margin-right: 10%;
+  /* border: 2px solid #ccc; */
+  margin-top: 5rem;
+  width: fit-content;
+  min-width: 80%;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carouselItem {
+  justify-content: center;
+
+  width: 100%;
+}
+
+.carouselImage {
+  width: 80%;
+  max-width: 80%;
+  max-height: auto;
+  margin-left: 10.1%;
+}
+
+.carouselCaption {
+  margin-top: 1rem;
+  display: block;
+  justify-content: center;
+  text-align: center;
+  
+}
+
+.carouselLi {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.carouselLis {
+  border: solid;
+  border-radius: 5px;
+  padding: .45rem;
+  margin: .25rem;
+  margin-top: 1rem;
+  margin-bottom: 3.5rem;
+}
+
+.carousel-item {
+  text-align: center;
+}

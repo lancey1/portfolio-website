@@ -1,0 +1,36 @@
+html {
+  margin: auto;
+  min-width: 500px;
+  width: 85%;
+  color: rgb(60, 60, 60);
+  background-image: url(../public/background.png);
+}
+
+body{
+  background-image: url(../public/background.png);
+
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+h4 {
+  padding: 0;
+  margin: 0;
+  color: rgb(30, 30, 30);
+}
+
+p {
+  color: #636363;
+  margin-bottom: 12px;
+}
+
+textarea {
+  font-family: inherit;
+}
+
+div{
+  overflow-wrap:break-word;
+}
