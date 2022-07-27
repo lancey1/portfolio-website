@@ -56,7 +56,6 @@ function ProfileCard(props) {
         </h4>
         <p>{user.basics.label} from {user.basics.region}</p>
         {/* <p>{user.basics.yearsOfExperience} year of experience as a developer</p> */}
-        <p>{user.basics.headline}</p>
         <p>{user.basics.summary}</p>
       </div>
       <div className={`${styles.resume}`}>
