@@ -1,0 +1,55 @@
+.container {
+  margin-top: 1.5rem;
+  margin-left: 10%;
+  margin-right: 10%;
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  min-height: 950px;
+  max-width: 140rem;
+  text-align: center;
+}
+.img {
+  margin-top: 2.7rem;
+  height: auto;
+}
+
+.basics {
+  max-width: 600px;
+  width: 50%;
+  margin-top: 8rem;
+  margin-bottom: 2rem;
+  margin-left: 1.5rem;
+}
+
+.handle {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+@media only screen and (max-width: 1069px) {
+  .container {
+    display: grid;
+    grid-template-rows: 150px;
+    justify-content: center;
+    border: none;
+    margin-top: 1.5rem;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    max-width: 140rem;
+    text-align: center;
+  }
+  .img {
+    height: 20rem;
+  }
+
+  .basics {
+    width: 85%;
+    align-self: center;
+    justify-self: center;
+    margin-top: 0rem;
+    position: relative;
+    margin-bottom: 0.25rem;
+  }
+}

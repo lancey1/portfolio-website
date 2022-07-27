@@ -2,7 +2,7 @@ import {Routes, Route, Navigate } from "react-router-dom";
 import {useState,useEffect} from "react"
 import Navbar from "./shared/Navbar";
 import About from "./pages/About";
-// import Home from "./pages/Home";
+import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import './App.css';
 
@@ -25,8 +25,8 @@ export default function App() {
      <Navbar />
      <Routes>
         <Route exact path="/about" element={<About user={user}/>} />
-        <Route exact path="/" element={<About user={user}/>} />
-        {/* <Route exact path="/" element={<Home user={user}/>} /> */}
+        {/* <Route exact path="/" element={<About user={user}/>} /> */}
+        <Route exact path="/" element={<Home user={user}/>} />
         <Route exact path="/projects" element={<Projects user={user} />} />
         <Route path="*" element={<Navigate to="/about"/>} />
       </Routes>
