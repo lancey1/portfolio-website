@@ -1,15 +1,12 @@
-import React, {useState } from "react";
+import React, { useState } from "react";
 import Carousel from "react-bootstrap/Carousel";
 import styles from "./Project-Carousel.module.css";
-import { useMediaQuery } from 'react-responsive'
+import { useMediaQuery } from "react-responsive";
 
 export default function ControlledCarousel(props) {
   const [index, setIndex] = useState(0);
-
-  const isDesktop = useMediaQuery({ query: '(min-width: 1070px)' });
-  const isTablet = useMediaQuery({ query: '(max-width: 1069px)' })
-  console.log({isTablet})
-  console.log({isDesktop})
+  const isDesktop = useMediaQuery({ query: "(min-width: 1070px)" });
+  const isTablet = useMediaQuery({ query: "(max-width: 1069px)" });
 
   const handleSelect = (selectedIndex, e) => {
     setIndex(selectedIndex);
@@ -27,14 +24,19 @@ export default function ControlledCarousel(props) {
           </a>
         )}
         {isTablet && (
-            <img
-              className={`${styles.carouselImage}`}
-              src={project.images[1].resolutions.desktop.url}
-              alt={project.displayName}
-            />
+          <img
+            className={`${styles.carouselImage}`}
+            src={project.images[1].resolutions.desktop.url}
+            alt={project.displayName}
+          />
         )}
         <div className={`${styles.carouselCaption}`}>
-          <a href={project.githubUrl} title={`to ${project.displayName} repo`} target="_blank" rel="noreferrer">
+          <a
+            href={project.githubUrl}
+            title={`to ${project.displayName} repo`}
+            target="_blank"
+            rel="noreferrer"
+          >
             <b>{project.displayName}</b>
           </a>
           <p>{project.summary}</p>

@@ -40,9 +40,8 @@ function ProfileCard(props) {
  
   return (
     <div className={`${styles.container}`}>
-			<div>
-      <img className={`${styles.img}`} src={user.basics.image} alt="avatar"></img>
-			</div>
+			<div className={`${styles.imgdiv}`}> 
+      <img className={`${styles.img}`} src={user.basics.image} alt="avatar"></img>			</div>
       <div className={`${styles.basics}`}>
         <h2>{user.basics.name}</h2>
         <h4 className= {`${styles.handle}`}>

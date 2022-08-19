@@ -45,8 +45,8 @@
   justify-content: center;
 }
 .handle {
-margin-top: .5em;
-margin-bottom: .5em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 li {
   text-align: center;
@@ -60,7 +60,7 @@ hr {
 @media only screen and (max-width: 1069px) {
   .container {
     border: none;
-    margin-top: 1.5rem;
+    margin-top: 1rem;
     margin-left: 10%;
     margin-right: 10%;
     display: grid;
@@ -76,14 +76,18 @@ hr {
     grid-row-start: 1;
     grid-row-end: 2;
     height: 20rem;
+    margin-right: 2rem;
   }
-
+  .imgdiv {
+    height: fit-content;
+  }
   .basics {
     position: relative;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 3;
     grid-row-end: 4;
+    margin-top: -3rem;
     margin-bottom: 0.25rem;
   }
 
