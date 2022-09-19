@@ -1,4 +1,7 @@
-.project{
+.projects{
   margin-top: 5rem;
-  height: 1000px;
+}
+
+.projects h1 {
+  text-align: center;
 }

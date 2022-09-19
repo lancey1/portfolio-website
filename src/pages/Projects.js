@@ -1,11 +1,13 @@
-import { Fragment } from "react";
 import ControlledCarousel from "../components/Project-Carousel";
+import styles from "./Projects.module.css";
 
 function Projects(props) {
+  console.log(props.user.projects)
   return (
-    <Fragment>
+    <div className={`${styles.projects}`}>
+      <h1>My Projects</h1>
       <ControlledCarousel projects={props.user.projects} />
-    </Fragment>
+    </div>
   );
 }
 

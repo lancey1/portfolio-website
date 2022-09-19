@@ -18,7 +18,7 @@ export default function ControlledCarousel(props) {
           <a href={project.githubUrl} target="_blank" rel="noreferrer">
             <img
               className={`${styles.carouselImage}`}
-              src={project.images[1].resolutions.desktop.url}
+              src={project.images[0].resolutions.desktop.url}
               alt={project.displayName}
             />
           </a>
@@ -26,7 +26,7 @@ export default function ControlledCarousel(props) {
         {isTablet && (
           <img
             className={`${styles.carouselImage}`}
-            src={project.images[1].resolutions.desktop.url}
+            src={project.images[0].resolutions.desktop.url}
             alt={project.displayName}
           />
         )}
