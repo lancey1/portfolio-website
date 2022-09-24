@@ -12,6 +12,7 @@
 .img {
   margin-top: 2.7rem;
   height: auto;
+  border-radius: 5px;
 }
 
 .basics {
